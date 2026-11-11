@@ -1,0 +1,5 @@
+A tool I made for myself to send files or a directory to a remote server.
+Must enter exactly 3 arguments. You cannot enter more than one local file/directory at a time. 
+It asks for sudo to move the file to the destination because sometimes the destination requires root. 
+
+It takes the local file/directory and creates a tarball, then streams it to SSH. On the remote server, SSH unpacks the tarball and puts it in /tmp/transfer. It asks for sudo to move the file to the destination so that it can be anywhere on the server. 
